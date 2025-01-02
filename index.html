@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-DO-List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="content">
+    <div class="container">
+        <button id="red">
+            <img src="LD-removebg-preview.png" alt="" id="white">
+        </button>
+        <div class="todo">
+            <h2 style="color: red;">To-Do App</h2> <img src="icon.png" alt="">
+
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Give your text">
+                <input type="date" id="datetime" placeholder="pick a date">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    width: 100%;
+    background-color: var(--primary-color);
+    min-height: 100vh;
+    padding: 10px;
+}
+.todo{
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    background:white;
+    border: 2px solid black;
+}
+.todo h2{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-bottom: 20px;
+    
+
+
+}
+img{
+    display: flex;
+    margin-left: 120px;
+    margin-top: -69px;
+    padding: 10px;
+    height: 80px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightgray;
+    
+    border-radius: 40px;
+    padding-left: 20px;
+    margin-top: 40px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    color: black;
+    font-weight: 14px;
+    
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color: #ff5945;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 40px;
+    font-size: 16px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: ' ';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+/* #list-container{
+    /* display: flex; */
+    /* margin-left: 40px;
+    font-size: 20px; */
+/* } */
+/* .checked{
+    color: #555;
+    text-decoration: line-through;
+}  */
+  ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+  }
+  ul li.checked::before{
+    background-image: url(checked.png);
+  }
+  ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+  }
+  ul li span:hover{
+    background-color: lightgrey;
+  }
+  .night-mode{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+  :root{
+    --primary-color: white(0, 0, 0, 0.807);
+    --secondary-color:rgba(0, 0, 0, 0.767);
+  } 
+/* Style for the button */
+#red{
+    background-color:transparent;
+    width: 20px;
+    padding-left: 1px;
+}
+#white{
+    background-color: transparent;
+    mix-blend-mode: difference;
+    margin: -15px;
+    padding: 20px;
+}
